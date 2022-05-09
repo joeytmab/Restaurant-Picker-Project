@@ -34,7 +34,7 @@ function addressSearch(restaurant, park, selectedRestaurantName, selectedLocatio
     event.preventDefault();
     localStorage.clear();
     //utilizes mapquest API to develop directions from passed in restaurant address input to passed in location address input
-    fetch(`http://www.mapquestapi.com/directions/v2/route?key=kjB9lPrpbc0GrGOIyTCQIBKimoouOGE1&from=${restaurant}&to=${park}`)
+    fetch(`https://www.mapquestapi.com/directions/v2/route?key=kjB9lPrpbc0GrGOIyTCQIBKimoouOGE1&from=${restaurant}&to=${park}`)
         .then(response => response.json())
         .then(function (data) {
             console.log(data);
